@@ -1,3 +1,153 @@
+<style type="text/css">
+    body {
+        font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+        font-weight: 300;
+        font-size: 18px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 1100px;
+    }
+    
+    h1 {
+        font-weight: 300;
+        margin: 0.4em;
+    }
+    
+    p {
+        margin: 0.2em;
+    }
+    
+    .disclaimerbox {
+        background-color: #eee;
+        border: 1px solid #eeeeee;
+        border-radius: 10px;
+        -moz-border-radius: 10px;
+        -webkit-border-radius: 10px;
+        padding: 20px;
+    }
+    
+    video.header-vid {
+        height: 140px;
+        border: 1px solid black;
+        border-radius: 10px;
+        -moz-border-radius: 10px;
+        -webkit-border-radius: 10px;
+    }
+    
+    img.header-img {
+        height: 140px;
+        border: 1px solid black;
+        border-radius: 10px;
+        -moz-border-radius: 10px;
+        -webkit-border-radius: 10px;
+    }
+    
+    img.rounded {
+        border: 1px solid #eeeeee;
+        border-radius: 10px;
+        -moz-border-radius: 10px;
+        -webkit-border-radius: 10px;
+    }
+    
+    a:link,
+    a:visited {
+        color: #1367a7;
+        text-decoration: none;
+    }
+    
+    a:hover {
+        color: #208799;
+    }
+    
+    td.dl-link {
+        height: 160px;
+        text-align: center;
+        font-size: 22px;
+    }
+    
+    .layered-paper-big {
+        /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+        box-shadow:
+            0px 0px 1px 1px rgba(0, 0, 0, 0.35),
+            /* The top layer shadow */
+            5px 5px 0 0px #fff,
+            /* The second layer */
+            5px 5px 1px 1px rgba(0, 0, 0, 0.35),
+            /* The second layer shadow */
+            10px 10px 0 0px #fff,
+            /* The third layer */
+            10px 10px 1px 1px rgba(0, 0, 0, 0.35),
+            /* The third layer shadow */
+            15px 15px 0 0px #fff,
+            /* The fourth layer */
+            15px 15px 1px 1px rgba(0, 0, 0, 0.35),
+            /* The fourth layer shadow */
+            20px 20px 0 0px #fff,
+            /* The fifth layer */
+            20px 20px 1px 1px rgba(0, 0, 0, 0.35),
+            /* The fifth layer shadow */
+            25px 25px 0 0px #fff,
+            /* The fifth layer */
+            25px 25px 1px 1px rgba(0, 0, 0, 0.35);
+        /* The fifth layer shadow */
+        margin-left: 10px;
+        margin-right: 45px;
+    }
+    
+    
+    .layered-paper {
+        /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+        box-shadow:
+            0px 0px 1px 1px rgba(0, 0, 0, 0.35),
+            /* The top layer shadow */
+            5px 5px 0 0px #fff,
+            /* The second layer */
+            5px 5px 1px 1px rgba(0, 0, 0, 0.35),
+            /* The second layer shadow */
+            10px 10px 0 0px #fff,
+            /* The third layer */
+            10px 10px 1px 1px rgba(0, 0, 0, 0.35);
+        /* The third layer shadow */
+        margin-top: 5px;
+        margin-left: 10px;
+        margin-right: 30px;
+        margin-bottom: 5px;
+    }
+    
+    .vert-cent {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    
+    hr {
+        margin: 0;
+        border: 0;
+        height: 1.5px;
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    }
+    
+    .rotate {
+        /* FF3.5+ */
+        -moz-transform: rotate(-90.0deg);
+        /* Opera 10.5 */
+        -o-transform: rotate(-90.0deg);
+        /* Saf3.1+, Chrome */
+        -webkit-transform: rotate(-90.0deg);
+        /* IE6,IE7 */
+        filter: progid: DXImageTransform.Microsoft.BasicImage(rotation=0.083);
+        /* IE8 */
+        -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=0.083)";
+        /* Standard */
+        transform: rotate(-90.0deg);
+    }
+    
+    c {
+        white-space: nowrap;
+        writing-mode: tb-rl;
+        transform: rotate(-180.0deg);
+    }
+    </style>
 
 <head>
     <title>ViDA-MAN</title>
@@ -10,7 +160,7 @@
         <span style="font-size:42px">ViDA-MAN: Visual Dialog with Digital Human</span>
     </center>
     <br>
-    <table align=center width=900px>
+    <table align=center width=1000px>
         <tr>
             <td align=center width=120px>
                 <center>
@@ -39,7 +189,7 @@
             </td>
         </tr>
     </table>
-    <table align=center width=900px>
+    <table align=center width=1000px>
         <tr>
             
             <td align=center width=120px>
@@ -99,6 +249,37 @@
     <br>
     <br>
     <br>
+    <table align=center width=900px>
+    <tr>
+        <td width=1000px>
+            <center>
+                <img src="./data/framework.png" width="800px" ></img></href><br>
+            </center>
+        </td>
+    </tr>
+    <tr>
+        <td width=600px>
+            <br>
+            <p align="justify" style="font-size: 18px">
+                We demonstrate ViDA-MAN, a digital-human agent for multi-modal
+interaction, which offers realtime audio-visual responses to instant
+speech inquiries. Compared to traditional text or voice-based system,
+ViDA-MAN offers human-like interactions (e.g, vivid voice,
+natural facial expression and body gestures). Given a speech request,
+the demonstration is able to response with high quality
+videos in sub-second latency. To deliver immersive user experience,
+ViDA-MAN seamlessly integrates multi-modal techniques
+including Acoustic Speech Recognition (ASR), multi-turn dialog,
+Text To Speech (TTS), talking heads video generation. Backed with
+large knowledge base, ViDA-MAN is able to chat with users on a
+number of topics including chit-chat, weather, device control, News
+recommendations, booking hotels, as well as answering questions
+via structured knowledge.
+            </p>
+        </td>
+    </tr>
+    </table>
+    <hr>
 </body>
 
 </html>
